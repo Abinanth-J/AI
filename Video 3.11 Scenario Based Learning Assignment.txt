@@ -1,0 +1,49 @@
+Video 3.11 Scenario Based Learning
+
+Learner Name: Abinanth J
+
+A company works with number of employees, all the works are dependents on the employees. Even
+if one of the employees resign the job immediately then assigned work will be not finished at the
+time, so delivery of the project to the clients will be delayed. Company planned to make solution for
+this, they want to know which employee may resign next. If they know previously, they can arrange
+alternative to avoid such problem. As an AI Engineer you must give Solution to this.
+A) How will you achieve this in AI?
+B) Find out the 3 -Stage of Problem Identification
+C) Name the project
+D) Create the dummy Dataset.
+
+Solution:
+---------
+
+A) How will you achieve this in AI?
+Collect the Employee work satisfaction Data like Working hours, YOE, Workload, Job satisfaction, Salary, Work mode etc...
+Based on this train my AI to predict the possibilities to resign the job of the employee using ML
+
+B) Find out the 3 -Stage of Problem Identification
+
+Stage1: Domain Selection
+	---------------- 
+		NLP - for Workload, JobSatisfaction, Work mode
+		Time Series Analysis - for Working hours, YOE (Year of Experience)
+		MachineLearing - Salary
+
+Stage2 - Learning Selection 
+	 ------------------
+		Unsupervised learning - Bcz we have exact input data. but we just predict the output
+	
+C) Name the project - Employee Relieving Risk Prediction
+
+D) Create the dummy Dataset.
+
+EmployeeID	YOE	Salary	WorkingHrs	Workload	WorkMode	JobSatisfaction	Perdicted Output
+101	5	1000000	8	High	        Hybrid		Satisfied	Stay
+102	3	800000	8	Medium		Office		Good		Stay
+103	2	500000	9	High		Office		Not Bad		Resign Soon
+104	4	800000	10	High		Hybrid		Good		Resign Soon
+105	8	1200000	8	Medium		WFH		Satisfied	Stay
+106	1	350000	10	High		Office		Poor		Resign Soon
+107	6	1000000	8	Low		WFH		Good		Stay
+108	3	600000	9	Medium		Hybrid		Not Bad		Stay
+109	7	1100000	8	Low		Office		Satisfied	Stay
+110	2	450000	10	High		Hybrid		Poor		Resign soon
+
